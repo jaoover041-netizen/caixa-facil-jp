@@ -1,0 +1,6 @@
+{
+  "name": "Caixa Fácil - PDV & Web APK",
+  "description": "Sistema de Ponto de Venda (PDV) completo com controle de mesas, estoque, fechamento de caixa, painel de lucro e instalação Web APK/PWA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

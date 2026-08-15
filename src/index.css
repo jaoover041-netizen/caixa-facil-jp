@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.05em;
+  }
+
+  .font-mono-receipt {
+    font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+  }
+}
+
+/* Scanline background effect */
+.bg-scanlines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.015) 0px,
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+/* Custom Gold Glow */
+.gold-glow {
+  box-shadow: 0 0 25px rgba(255, 193, 7, 0.28);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 0 35px rgba(255, 193, 7, 0.45);
+}
+
+/* Thermal receipt paper styling */
+.thermal-paper {
+  background-color: #f7f3e8;
+  color: #141414;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 0 40px rgba(0, 0, 0, 0.04);
+}
+
+/* Print CSS */
+@page {
+  size: 80mm auto;
+  margin: 4mm;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  #thermal-receipt-print {
+    display: block !important;
+    width: 72mm;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+    color: #000 !important;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}

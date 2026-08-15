@@ -1,0 +1,31 @@
+{
+  "name": "Caixa Fácil PDV - Ponto de Venda",
+  "short_name": "Caixa Fácil",
+  "description": "Sistema de PDV Universal para comércios, lanchonetes, mercados e serviços.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#FFC107",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%230a0a0a' stroke='%23FFC107' stroke-width='24'/%3E%3Ctext x='50%25' y='46%25' font-family='sans-serif' font-weight='900' font-size='190' fill='%23FFC107' text-anchor='middle' dominant-baseline='central'%3ECF%3C/text%3E%3Ctext x='50%25' y='72%25' font-family='sans-serif' font-weight='700' font-size='64' fill='%23FFFFFF' letter-spacing='12' text-anchor='middle' dominant-baseline='central'%3EPDV%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "finance", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Novo Pedido / PDV",
+      "url": "/",
+      "description": "Abrir tela de vendas do caixa"
+    },
+    {
+      "name": "Mesas & Comandas",
+      "url": "/#mesas",
+      "description": "Ver mapa de mesas ocupadas"
+    }
+  ]
+}
